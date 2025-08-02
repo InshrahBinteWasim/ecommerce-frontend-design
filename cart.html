@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Consolidated CSS -->
+</head>
+<body>
+    <div class="web-main layout-wrapper">
+        <!-- Header - Reusing the existing header structure -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo-symbol.svg" alt="Logo Symbol" class="logo-symbol" />
+                        <h2 class="logo-text">Brand</h2>
+                    </a>
+                </div>
+
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Search" />
+                    <select class="category-select">
+                        <option>All category</option>
+                        <!-- More options can be added here -->
+                    </select>
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <img src="assets/Profile-Vector.svg" alt="Profile" />
+                        <span>Profile</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="assets/Message-Vector.svg" alt="Message" />
+                        <span>Message</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="assets/Orders-Vector.svg" alt="Orders" />
+                        <span>Orders</span>
+                    </div>
+                    <a href="cart.html" class="icon-item">
+                        <img src="assets/Cart-Vector.svg" alt="Cart" />
+                        <span>My cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- NAVBAR START - Reusing the existing navbar structure -->
+        <nav class="navbar">
+            <ul class="nav-left nav-list">
+                <li class="nav-item icon">
+                    <img src="assets/nav icon.svg" alt="Menu Icon" />
+                    <span>All Category</span>
+                </li>
+                <li class="nav-item">Hot Offers</li>
+                <li class="nav-item">Gift Boxes</li>
+                <li class="nav-item">Projects</li>
+                <li class="nav-item">Menu Item</li>
+                <li class="nav-item dropdown">
+                    <span>Help</span>
+                    <img src="assets/dropdown.svg" alt="Dropdown Icon" />
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="payment">
+                    <span>English, USD</span>
+                    <img src="assets/dropdown.svg" alt="Payment Icon" />
+                </div>
+                <div class="ship-to">
+                    <span>Ship to</span>
+                    <img src="assets/flags icon.svg" alt="Flag" class="flag" />
+                    <img src="assets/dropdown.svg" alt="Ship Icon" />
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+
+        <!-- Main Content Area for Cart -->
+        <main class="cart-main">
+            <h2 class="cart-heading">My cart (<span id="cart-item-count">3</span>)</h2>
+
+            <div class="cart-content-wrapper">
+                <div class="cart-items-section">
+                    <div class="cart-left-column-wrapper">
+                        <div class="cart-items-list">
+                            <!-- Cart Item 1 -->
+                            <div class="cart-item-card">
+                                <div class="item-details">
+                                    <img src="assets/item-cart-1.png" alt="T-shirt" class="item-image" />
+                                    <div class="item-info">
+                                        <p class="item-name">T-shirts with multiple colors, for men and lady</p>
+                                        <p class="item-specs">Size: medium, Color: blue, Material: Plastic</p>
+                                        <p class="item-seller">Seller: Artel Market</p>
+                                        <div class="item-actions">
+                                            <button class="action-btn remove-btn">Remove</button>
+                                            <button class="action-btn save-btn">Save for later</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-price-qty">
+                                    <p class="item-price">$78.00</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-2">Qty:</label>
+                                        <select id="qty-2">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9" selected>9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cart Item 2 -->
+                            <div class="cart-item-card">
+                                <div class="item-details">
+                                    <img src="assets/item-cart-2.png" alt="T-shirt" class="item-image" />
+                                    <div class="item-info">
+                                        <p class="item-name">T-shirts with multiple colors, for men and lady</p>
+                                        <p class="item-specs">Size: medium, Color: blue, Material: Plastic</p>
+                                        <p class="item-seller">Seller: Best factory LLC</p>
+                                        <div class="item-actions">
+                                            <button class="action-btn remove-btn">Remove</button>
+                                            <button class="action-btn save-btn">Save for later</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-price-qty">
+                                    <p class="item-price">$39.00</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-2">Qty:</label>
+                                        <select id="qty-2">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cart Item 3 -->
+                            <div class="cart-item-card">
+                                <div class="item-details">
+                                    <img src="assets/item-cart-3.png" alt="T-shirt" class="item-image" />
+                                    <div class="item-info">
+                                        <p class="item-name">T-shirts with multiple colors, for men and lady</p>
+                                        <p class="item-specs">Size: medium, Color: blue, Material: Plastic</p>
+                                        <p class="item-seller">Seller: Artel Market</p>
+                                        <div class="item-actions">
+                                            <button class="action-btn remove-btn">Remove</button>
+                                            <button class="action-btn save-btn">Save for later</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-price-qty">
+                                    <p class="item-price">$170.00</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-2">Qty:</label>
+                                        <select id="qty-2">
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-bottom-actions">
+                            <a href="index.html" class="back-to-shop-btn">
+                                <img src="assets/arrow-left-icon.svg" alt="Back" /> Back to shop
+                            </a>
+                            <button class="remove-all-btn">Remove all</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-info-blocks">
+                        <!-- Info Block 1 -->
+                        <div class="info-block">
+                            <div class="info-block-icon">
+                                <img src="assets/secure-payment-icon.svg" alt="Secure Payment" />
+                            </div>
+                            <div class="info-block-content">
+                                <h4>Secure payment</h4>
+                                <p>Have you ever finally just</p>
+                            </div>
+                        </div>
+
+                        <!-- Info Block 2 -->
+                        <div class="info-block">
+                            <div class="info-block-icon">
+                                <img src="assets/customer-support-icon.svg" alt="Customer Support" />
+                            </div>
+                            <div class="info-block-content">
+                                <h4>Customer support</h4>
+                                <p>Have you ever finally just</p>
+                            </div>
+                        </div>
+
+                        <!-- Info Block 3 -->
+                        <div class="info-block">
+                            <div class="info-block-icon">
+                                <img src="assets/free-delivery-icon.svg" alt="Free Delivery" />
+                            </div>
+                            <div class="info-block-content">
+                                <h4>Free delivery</h4>
+                                <p>Have you ever finally just</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-summary-container">
+                    <!-- Coupon container -->
+                    <div class="coupon-card">
+                        <div class="coupon-section">
+                            <p>Have a coupon?</p>
+                            <div class="coupon-input-group">
+                                <input type="text" placeholder="Add coupon" />
+                                <button class="apply-coupon-btn">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary details, button, and payment methods container -->
+                    <div class="summary-card">
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span>$1403.97</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount:</span>
+                                <span class="discount-value">-$60.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax:</span>
+                                <span class="tax-value">+$14.00</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-total-row total-row">
+                            <span>Total:</span>
+                            <span class="total-value">$1357.97</span>
+                        </div>
+
+                        <button class="checkout-btn">Checkout</button>
+
+                        <div class="payment-methods">
+                            <img src="assets/payment-icon-1.svg" alt="Amex" />
+                            <img src="assets/payment-icon-2.svg" alt="Mastercard" />
+                            <img src="assets/payment-icon-3.svg" alt="PayPal" />
+                            <img src="assets/payment-icon-4.svg" alt="Visa" />
+                            <img src="assets/payment-icon-5.svg" alt="Pay" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saved for later Section -->
+            <div class="saved-for-later-section">
+                <h3 class="saved-for-later-heading">Saved for later</h3>
+                <div class="saved-for-later-grid">
+                    <div class="saved-item-card">
+                        <div class="saved-item-image-container">
+                            <img src="assets/saved-1.png" alt="GoPro" class="saved-item-image" />
+                        </div>
+                        <p class="saved-item-price">$99.50</p>
+                        <p class="saved-item-name">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="move-to-cart-btn">
+                            <img src="assets/cart-icon.svg" alt="Cart Icon" /> Move to cart
+                        </button>
+                    </div>
+                    <div class="saved-item-card">
+                        <div class="saved-item-image-container">
+                            <img src="assets/saved-2.png" alt="GoPro" class="saved-item-image" />
+                        </div>
+                        <p class="saved-item-price">$99.50</p>
+                        <p class="saved-item-name">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="move-to-cart-btn">
+                            <img src="assets/cart-icon.svg" alt="Cart Icon" /> Move to cart
+                        </button>
+                    </div>
+                    <div class="saved-item-card">
+                        <div class="saved-item-image-container">
+                            <img src="assets/saved-3.png" alt="Smart Watch" class="saved-item-image" />
+                        </div>
+                        <p class="saved-item-price">$99.50</p>
+                        <p class="saved-item-name">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="move-to-cart-btn">
+                            <img src="assets/cart-icon.svg" alt="Cart Icon" /> Move to cart
+                        </button>
+                    </div>
+                    <div class="saved-item-card">
+                        <div class="saved-item-image-container">
+                            <img src="assets/saved-4.png" alt="Laptop" class="saved-item-image" />
+                        </div>
+                        <p class="saved-item-price">$99.50</p>
+                        <p class="saved-item-name">GoPro HERO6 4K Action Camera - Black</p>
+                        <button class="move-to-cart-btn">
+                            <img src="assets/cart-icon.svg" alt="Cart Icon" /> Move to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Super Discount Banner - Reusing the existing banner structure -->
+            <section class="section-super-discount">
+                <div class="discount-content">
+                    <h3>Super discount on more than 100 USD</h3>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <a href="cart.html" class="shop-now-btn">Shop now</a>
+            </section>
+        </main>
+        <!-- MAIN CONTENT END -->
+
+        <!-- FOOTER START - Reusing the existing footer structure -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo-symbol.svg" alt="Brand Logo" class="logo-symbol"/>
+                        <h2 class="logo-text">Brand</h2>
+                    </div>
+                    <p>Best information about the company<br>gies here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <img src="assets/facebook icon.svg" alt="Facebook" />
+                        <img src="assets/twitter icon.svg" alt="Twitter" />
+                        <img src="assets/linkedin icon.svg" alt="LinkedIn" />
+                        <img src="assets/instagram icon.svg" alt="Instagram" />
+                        <img src="assets/youtube icon.svg" alt="YouTube" />
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Partnership</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>For users</h4>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>Get app</h4>
+                        <div class="app-buttons">
+                            <img src="assets/App Store-button.svg" alt="App Store" />
+                            <img src="assets/Google Play-button.svg" alt="Google Play" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2023 Ecommerce.</p>
+                <div class="language-select">
+                    <img src="assets/US flag.svg" alt="Language" />
+                    <span>English</span>
+                    <img src="assets/expand_less icon.svg" alt="expand_less" />
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+    <script src="script.js"></script> <!-- Consolidated JS -->
+</body>
+</html>
